@@ -246,31 +246,3 @@ curl -X PUT http://127.0.0.1:8000/api/products/1 \
 ```
 curl -X DELETE http://127.0.0.1:8000/api/products/1
 ```
-
----
-
-### Submission
-
-Include these in your GitHub repo or ZIP:
-- /app
-- /routes/api.php
-- /database (migrations, factories, seeders)
-- README.md (this file)
-
-The project should run with:
-```
-php artisan migrate --seed
-php artisan serve
-```
-
----
-
-### Notes/Troubleshooting
-
-- If /api endpoints return 404, ensure:
-  - routes/api.php contains routes
-  - app/Providers/RouteServiceProvider.php groups api.php with prefix('api')
-  - config/app.php providers includes App\Providers\RouteServiceProvider::class
-  - Clear caches: php artisan optimize:clear; php artisan route:clear
-- For DB errors, verify .env credentials and that pdo_mysql is enabled.
-- Soft deletes hide records by default; use withTrashed() in code to include them.
