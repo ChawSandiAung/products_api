@@ -13,8 +13,8 @@ A simple RESTful API for managing Products and Variants with Laravel, MySQL, Elo
 
 1) Clone the repo
 ```bash
-git clone <your-repo-url> products-api
-cd products-api
+git clone https://github.com/ChawSandiAung/products_api
+cd products_api
 ```
 
 2) Install dependencies and app key
